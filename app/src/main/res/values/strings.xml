@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Quizze</string>
+    <string name="quizzes">Quizzes</string>
+    <string name="enjoy_brain_power">Enjoy Brain Power</string>
+    <string name="james">James</string>
+    <string name="last_quiz_time">Last quiz time</string>
+    <string name="last_quiz_result">Last quiz result</string>
+    <string name="_10min">10min</string>
+    <string name="_5_7">5/7</string>
+    <string name="_1_what_is_kotlin">1. What is Kotlin?</string>
+    <string name="programing_language">Programing language</string>
+    <string name="congratulations">Congratulations</string>
+    <string name="your_score_is">Your score is</string>
+    <string name="_100">100%</string>
+    <string name="play_again">Play again</string>
+</resources>

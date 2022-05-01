@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <View
+        android:id="@+id/vUser"
+        android:layout_width="414dp"
+        android:layout_height="315dp"
+        android:background="@drawable/user_info_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/vStoryCircle"
+        android:layout_width="106dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/story_circle_background"
+        app:layout_constraintStart_toStartOf="@id/vUser"
+        app:layout_constraintTop_toTopOf="@id/vUser" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivUserAvatar"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/ic_user"
+        app:layout_constraintBottom_toBottomOf="@id/vStoryCircle"
+        app:layout_constraintEnd_toEndOf="@id/vStoryCircle"
+        app:layout_constraintStart_toStartOf="@id/vStoryCircle"
+        app:layout_constraintTop_toTopOf="@id/vStoryCircle" />
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="285dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/karla"
+        android:text="@string/james"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintDimensionRatio="1.4"
+        app:layout_constraintStart_toStartOf="@id/vUser"
+        app:layout_constraintTop_toBottomOf="@id/ivUserAvatar" />
+
+
+    <TextView
+        android:id="@+id/tvQuizTime"
+        android:layout_width="133dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="188dp"
+        android:text="@string/last_quiz_time"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintDimensionRatio="5.7"
+        app:layout_constraintStart_toStartOf="@id/vUser"
+        app:layout_constraintTop_toTopOf="@id/vUser" />
+
+    <TextView
+        android:id="@+id/tvQuizResult"
+        android:layout_width="148dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="188dp"
+        android:text="@string/last_quiz_result"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintDimensionRatio="6.4"
+        app:layout_constraintStart_toStartOf="@id/vUser"
+        app:layout_constraintTop_toTopOf="@id/vUser" />
+
+    <View
+        android:id="@+id/vResult"
+        android:layout_width="71dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="284dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/user_view_background"
+        app:layout_constraintStart_toStartOf="@id/vUser"
+        app:layout_constraintTop_toBottomOf="@id/tvQuizResult" />
+
+    <ImageView
+        android:id="@+id/ivText"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/ic_result"
+        app:layout_constraintStart_toStartOf="@id/vResult"
+        app:layout_constraintTop_toTopOf="@id/vResult" />
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="35dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/_5_7"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:fontFamily="@font/karla"
+        app:layout_constraintStart_toStartOf="@id/vResult"
+        app:layout_constraintTop_toBottomOf="@id/ivText" />
+
+    <View
+        android:id="@+id/vTime"
+        android:layout_width="71dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/user_view_background"
+        app:layout_constraintStart_toStartOf="@id/vUser"
+        app:layout_constraintTop_toBottomOf="@id/tvQuizTime" />
+
+    <ImageView
+        android:id="@+id/ivTime"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/ic_time"
+        app:layout_constraintStart_toStartOf="@id/vTime"
+        app:layout_constraintTop_toTopOf="@id/vTime" />
+
+    <TextView
+        android:id="@+id/tvMinute"
+        android:layout_width="57dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="6dp"
+        android:text="@string/_10min"
+        android:textColor="@color/black"
+        android:fontFamily="@font/karla"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/vTime"
+        app:layout_constraintTop_toBottomOf="@id/ivTime" />
+
+
+    <View
+        android:id="@+id/vKotlin"
+        android:layout_width="378dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="146dp"
+        android:background="@drawable/button_background"
+        android:clickable="true"
+        app:layout_constraintDimensionRatio="4.02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vUser"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/ivKotlinLogo"
+        android:layout_width="169dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="29dp"
+        android:src="@drawable/ic_kotlin_logo"
+        app:layout_constraintStart_toStartOf="@id/vKotlin"
+        app:layout_constraintTop_toTopOf="@id/vKotlin" />
+
+    <ImageView
+        android:id="@+id/ivArrow"
+        android:layout_width="39dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_arrow"
+        app:layout_constraintEnd_toEndOf="@id/vKotlin"
+        app:layout_constraintTop_toTopOf="@id/vKotlin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
